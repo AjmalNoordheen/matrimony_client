@@ -1,12 +1,16 @@
-import { useState } from 'react'
 import './App.css'
 import UserProfile from './Pages/UserProfile'
+import { Route, Routes } from 'react-router-dom'
+import DashBoardPage from './Pages/UserDashBoard'
 
 function App() {
 
   return (
     <>
-    <UserProfile/>
+    <Routes>
+      <Route path='/' element={<DashBoardPage/>}/>
+      <Route path='/profile' element={<UserProfile/>}/>
+    </Routes>
     </>
   )
 }

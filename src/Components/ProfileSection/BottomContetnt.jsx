@@ -11,7 +11,7 @@ function BottomContetnt() {
           <div className="space-y-1">
             <h1 className="text-2xl font-black pb-2">Bio</h1>
             <h1 className="text-xl font-bold text-[#9a9a9a]">Basic Information</h1>
-            <div className="w-2/3  grid grid-cols-2 text-lg">
+            <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
                 {basicInfor.map((item,index)=>
                 <>
                 {index%2===0?
@@ -23,7 +23,7 @@ function BottomContetnt() {
 
           <div className="space-y-1">
           <h1 className="text-xl text-[#9a9a9a] font-bold">Religious Information</h1>
-          <div className="w-2/3  grid grid-cols-2 text-lg">
+          <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
                 {Religious.map((item,index)=>
                 <>
                 {index%2===0?
@@ -35,7 +35,7 @@ function BottomContetnt() {
           
           <div className="space-y-1">
             <h1 className="text-xl font-bold text-[#9a9a9a]">Educational and Professional Information</h1>
-            <div className="w-2/3  grid grid-cols-2 text-lg">
+            <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
               <p className="font-bold">Education</p>
               <p className="font-medium">Bachelors (Bsc Computer Science)</p>
               <p className="font-bold">Profession</p>
