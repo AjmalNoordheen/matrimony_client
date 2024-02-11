@@ -14,7 +14,7 @@ function SideList() {
                 <AddHomeIcon fontSize='medium' className='ml-3 text-[#d91275]'/>
                 <h1 className='text-lg'>Home</h1>
             </div>
-            <div className='w-[93%] h-[3.5rem] hover:bg-[#f4bbd7] hover:text-[#d91275] cursor-pointer  bg-white rounded-lg text-[#9a9a9a] flex items-center gap-3'>
+            <div className='w-[93%] h-[3.5rem] hover:bg-[#f4bbd7]  hover:text-[#d91275] cursor-pointer  bg-white rounded-lg text-[#9a9a9a] flex items-center gap-3'>
                 <ChatBubbleIcon fontSize='medium' className='ml-3'/>
                 <h1 className='text-lg'>Messages</h1>
             </div>
