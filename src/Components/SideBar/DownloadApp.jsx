@@ -3,6 +3,7 @@ import React from 'react'
 function DownloadApp() {
   return (
     <>
+    {/* Playstore/Apple Dowload section */}
     <div className="w-[99%] lg:w-[93%] rounded-lg flex flex-col justify-center  mt-6 lg:p-3 pb-5 bg-white">
         <h1 className="pl-2 font-bold">Download our App</h1>
         <small className="pl-2 ">

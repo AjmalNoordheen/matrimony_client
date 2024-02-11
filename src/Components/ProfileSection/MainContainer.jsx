@@ -33,7 +33,7 @@ function MainContainer() {
            {/* User Interst components */}
              <UserInterests/>
              
-           {/* 3 buttons */}
+           {/* 3 buttons in Rightside of profile*/}
             <div className="flex flex-col  justify-between  pt-4 gap-y-4">
             <div className="flex justify-around w-full">
             <div className="lg:text-sm xl:text-xl md:w-[45%]  font-semibold flex items-center cursor-pointer hover:scale-105 bg-[#f5c6dd] px-3 py-2 rounded-full gap-x-2">
@@ -56,8 +56,8 @@ function MainContainer() {
       {/* Bottom container Details */}
       <BottomContetnt/>
       <div className="flex items-center justify-around sm:hidden pb-10">
-      <Footer/>
-      <DownloadApp/>
+          <Footer/>
+          <DownloadApp/>
       </div>
     </div>
   );

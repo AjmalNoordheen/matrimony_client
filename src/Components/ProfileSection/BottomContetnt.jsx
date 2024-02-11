@@ -1,9 +1,13 @@
 import React from 'react'
 
 function BottomContetnt() {
-    const basicInfor = ['Date of Birth','27-12-1993','Email Id','example@gmail.com','Blood Group','AB+','Height',
-                         '164cm','Weight','64kg']
-    const Religious = ['Religion','Islam','Sect','Sunni','Perform Namaz','Always',"Read Qur'an",'Daily','Religiousness','Religious']                     
+    const basicInfor = ['Date of Birth','27-12-1993','Email Id',
+                        'example@gmail.com','Blood Group','AB+',
+                        'Height','164cm','Weight','64kg']
+
+    const Religious = ['Religion','Islam','Sect','Sunni','Perform Namaz'
+                        ,'Always',"Read Qur'an",'Daily','Religiousness',
+                        'Religious']                     
   return (
     <>
     <div className="w-full bg-white shadow-md shadow-slate-300 h-full gap-y-8 rounded-xl p-4 flex flex-col">
@@ -22,8 +26,8 @@ function BottomContetnt() {
           </div>
 
           <div className="space-y-1">
-          <h1 className="text-xl text-[#9a9a9a] font-bold">Religious Information</h1>
-          <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
+            <h1 className="text-xl text-[#9a9a9a] font-bold">Religious Information</h1>
+            <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
                 {Religious.map((item,index)=>
                 <>
                 {index%2===0?

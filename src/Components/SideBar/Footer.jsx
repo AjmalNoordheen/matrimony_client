@@ -7,6 +7,7 @@ import CopyrightOutlinedIcon from '@mui/icons-material/CopyrightOutlined';
 
 function Footer() {
   return (
+    // Footer details
     <div className='w-full py-3 mt-2 flex flex-col  gap-y-3'>
                     <div className='w-full mx-4 md:mx-0 grid grid-cols-3 gap-1  '>
                         <small className='text-xs font-semibold col-span-2 md:col-span-1'>Privacy Policy</small>
