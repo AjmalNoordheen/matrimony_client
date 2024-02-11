@@ -8,7 +8,7 @@ function UserProfile() {
    <>
     <Navbar/>
     <div className='w-screen h-[4rem] bg-[#f6f6f6]'/>
-    <div className='w-screen h-full bg-[#f6f6f6] flex  justify-center items-center gap-x-2'>
+    <div className='w-screen h-full bg-[#f6f6f6] flex  justify-center items- gap-x-2 '>
         <SideNav/>
         <MainContainer/>
     </div>
