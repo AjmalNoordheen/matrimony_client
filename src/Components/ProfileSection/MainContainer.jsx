@@ -41,7 +41,7 @@ function MainContainer() {
                  <p>Show Interest</p>
               </div>
               <div className="lg:text-sm xl:text-xl md:w-[45%]  font-semibold flex cursor-pointer bg-[#ffebe0] hover:scale-105 px-3 py-2 rounded-full items-center gap-x-2">
-                <SendIcon className="text-[#471476]"/>
+                <SendIcon className="text-[#471476] ml-1 -rotate-45"/>
                 <p>Share Profile</p>
               </div>
             </div>
