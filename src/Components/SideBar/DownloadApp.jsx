@@ -13,7 +13,7 @@ function DownloadApp() {
         <div className=" w-full sm:w-11/12 flex flex-col items-center gap-y-3 mt-3 ">
           <div className="h-[3rem] sm:h-[3.5rem] w-full lg:w-11/12 flex items-center rounded-md bg-black">
             <img
-              src="playstore.png"
+              src="/playstore.png"
               className="w-1/5 h-[80%] ml-3"
               alt="playstore"
             />
@@ -23,7 +23,7 @@ function DownloadApp() {
             </div>
           </div>
           <div className="h-[3rem] sm:h-[3.5rem] w-full lg:w-11/12 flex items-center rounded-md bg-black">
-            <img src="apple.png" className="w-1/5 h-[83%] ml-3" alt="apple" />
+            <img src="/apple.png" className="w-1/5 h-[83%] ml-3" alt="apple" />
             <div className="text-white text-xs">
               <p className="text-xs pl-2 font-semibold">Download on the </p>
               <p className="text-sm sm:text-xl md:text-lg lg:text-2xl font-semibold pl-2">App Store</p>
