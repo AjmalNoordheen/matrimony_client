@@ -29,7 +29,7 @@ function UserInterests() {
                 )}
             </div>
 
-            <div className={`flex ${location.pathname==='/'?'md:w-[91%]':'md:w-[61%]'} sm:flex-row lg:flex-col  xl:flex-row w-[95%] gap-y-2  md:w-[61%] lg:w-[95%] xl:w-[72%] text-[#572982]  justify-between`}>
+            <div className={`flex ${location.pathname==='/'?'md:w-[91%]':'md:w-[61%]'} sm:flex-row lg:flex-col  xl:flex-row w-[98%] sm:w-[95%] gap-y-2  md:w-[61%] lg:w-[95%] xl:w-[72%] text-[#572982]  justify-between`}>
             <div className={location.pathname ==='/'?"bg-[#d91275] text-sm text-white rounded-full px-3 py-1 flex items-center justify-center":"border-2 border-[#572982] rounded-full px-2 flex items-center justify-center py-1"}>
                 <p>🖼️ Art Gallery</p>
               </div>
