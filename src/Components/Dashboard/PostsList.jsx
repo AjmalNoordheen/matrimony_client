@@ -14,9 +14,9 @@ function PostsList() {
   return (
     <div className=' w-[85%] md:w-[43%] xl:w-[39%] h-full flex flex-col  rounded-2xl  gap-y-3 bg-[#f6f6f6]'>
       {Array.from({length:5}).map(()=><>
-      <div onClick={()=>navigate('/profile')} className='w-full h-full bg-white rounded-b-2xl '>
-           <div className='h-full'>
-                <img loading='lazy' src="Capture1.PNG" className='rounded-t-2xl w-full h-full' alt="" />
+      <div  className='w-full h-full bg-white rounded-b-2xl '>
+           <div onClick={()=>navigate('/profile')} className='h-full'>
+                <img loading='lazy' src="Capture1.PNG" className='cursor-pointer rounded-t-2xl w-full h-full' alt="" />
            </div>
 
             {/* Like ,Share ,info Icon section */}
