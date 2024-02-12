@@ -5,3 +5,10 @@
 ::-webkit-scrollbar{
     width: 0;
 }
+
+@media screen and (max-width:400px) {
+    .intersts2{
+        display: flex;
+        flex-direction: column;
+    }
+}
