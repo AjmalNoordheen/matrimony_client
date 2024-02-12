@@ -12,7 +12,7 @@ function SideList() {
     <>
     {/* SideBar List */}
     <div className='w-11/12 flex flex-col items-center gap-y-3  py-4 rounded-b-lg font-semibold bg-white'>
-            <div onClick={()=>naviget('/')} className='w-[93%] h-[3.5rem] bg-[#f4bbd7] rounded-lg flex cursor-pointer items-center gap-3'>
+            <div onClick={()=>navigate('/')} className='w-[93%] h-[3.5rem] bg-[#f4bbd7] rounded-lg flex cursor-pointer items-center gap-3'>
                 <AddHomeIcon fontSize='medium' className='ml-3 text-[#d91275]'/>
                 <h1 className='text-lg'>Home</h1>
             </div>
