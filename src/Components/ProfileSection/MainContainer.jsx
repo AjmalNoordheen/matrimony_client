@@ -8,12 +8,12 @@ import UserInterests from "./UserInterests";
 import Footer from "../SideBar/Footer";
 import DownloadApp from "../SideBar/DownloadApp";
 
-function MainContainer() {
+function MainContainer({img}) {
   return (
     <div className="w-[90%] sm:w-[64%] h-full flex flex-col gap-y-5">
       <div className="flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 gap-x-2">
         <div className="w-[95%] h-[30%] lg:h-auto lg:w-[49%] bg-amber-700 rounded-xl">
-          <img loading="lazy" src="/Capture.PNG" className="w-full rounded-xl h-96 lg:h-full" alt="cover" />
+          <img loading="lazy" src={img} className="w-full rounded-xl h-96 lg:h-full" alt="cover" />
         </div>
         <div className=" w-[95%] lg:w-[49%] bg-white shadow-md font-semibold shadow-slate-400 h-full pb-5 rounded-xl">
           

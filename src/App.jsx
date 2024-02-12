@@ -9,7 +9,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<DashBoardPage/>}/>
-      <Route path='/profile' element={<UserProfile/>}/>
+      <Route path='/profile/:pic' element={<UserProfile/>}/>
     </Routes>
     </>
   )

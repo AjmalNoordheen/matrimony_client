@@ -13,7 +13,7 @@ function SideNav() {
       <div className="w-11/12 bg-white rounded-t-lg pb-2">
         <div className="w-full h-[22rem] bg-white rounded-t-lg flex flex-col items-center justify-center gap-y-1">
           <div className="h-[65%] w-[93%] rounded-2xl">
-            <img loading="lazy" src="men.jpg" className="w-full h-full rounded-3xl" alt="userImage" />
+            <img loading="lazy" src="/profilem.png" className="w-full h-full rounded-3xl" alt="userImage" />
           </div>
           <div className="w-full flex flex-col pl-2 gap-y-1 mt-3">
             <h1 className="text-base sm:text-xl font-semibold">Muhammed Anas</h1>
