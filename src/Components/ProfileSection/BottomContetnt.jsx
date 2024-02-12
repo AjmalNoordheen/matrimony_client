@@ -39,7 +39,7 @@ function BottomContetnt() {
           
           <div className="space-y-1">
             <h1 className="text-xl font-bold text-[#9a9a9a]">Educational and Professional Information</h1>
-            <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
+            <div className="lg:w-3/4  grid grid-cols-2 sm:text-lg">
               <p className="font-bold">Education</p>
               <p className="font-medium">Bachelors (Bsc Computer Science)</p>
               <p className="font-bold">Profession</p>
