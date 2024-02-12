@@ -16,7 +16,7 @@ function Navbar() {
       <div className={`w-[65%] h-full ${location.pathname==='/profile'?'hidden':''} flex md:hidden space-x-3 items-center`}>
           {Array.from({length:4}).map((item,index)=>
              <div key={item+index} className='w-14 h-14 rounded-full border-[#d91275] border-2'>
-             <img src="pro1.webp" className='w-full h-full rounded-full' alt="" />
+             <img loading='lazy' src="pro1.webp" className='w-full h-full rounded-full' alt="" />
            </div>
           )}
       </div>

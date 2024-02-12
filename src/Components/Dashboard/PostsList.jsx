@@ -16,7 +16,7 @@ function PostsList() {
       {Array.from({length:5}).map(()=><>
       <div onClick={()=>navigate('/profile')} className='w-full h-full bg-white rounded-b-2xl '>
            <div className='h-full'>
-                <img src="Capture1.PNG" className='rounded-t-2xl w-full h-full' alt="" />
+                <img loading='lazy' src="Capture1.PNG" className='rounded-t-2xl w-full h-full' alt="" />
            </div>
 
             {/* Like ,Share ,info Icon section */}
