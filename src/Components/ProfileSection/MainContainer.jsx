@@ -9,7 +9,7 @@ import Footer from "../SideBar/Footer";
 import DownloadApp from "../SideBar/DownloadApp";
 
 function MainContainer() {
-  const img = localStorage.getItem('profileImg');
+  const img = sessionStorage.getItem('profileImg');
   return (
     <div className="w-[90%] sm:w-[64%] h-full flex flex-col gap-y-5">
       <div className="flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 gap-x-2">
