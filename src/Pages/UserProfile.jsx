@@ -3,10 +3,8 @@ import Navbar from '../Components/NavBar/Navbar'
 import SideNav from '../Components/SideBar/SideNav'
 import MainContainer from '../Components/ProfileSection/MainContainer'
 import FooterIcons from '../Components/IconFooter/FooterIcons'
-import { useParams } from 'react-router-dom'
 
 function UserProfile() {
-
   return (
    <>
     <Navbar/>

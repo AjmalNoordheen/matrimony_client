@@ -25,7 +25,7 @@ function PostsList() {
 
     // naviagte to profile
     const handleProfileClick = (img) => {
-        navigate(`/profile`, { state: { img } });
+        navigate(`/profile`,{ state: { img } });
         sessionStorage.setItem('profileImg', img);
     };
 
