@@ -12,25 +12,31 @@ import { userListItems } from '../config';
 
 function PostsList() {
     const navigate = useNavigate()
-    const [id,setId] = useState(-1)
-    const [like,setLike] = useState(false)
+    const [like,setLike] = useState({})
 
-    const manageLike= (index,id)=>{
-        try {
-            setId(id)
-            setLike(like ? false : true)
-        } catch (error) {
-            console.log(error)
-        }
-    }
+    // handling like function
+    const manageLike = (id) => {
+        setLike(prevLikes => ({
+            ...prevLikes,
+            [id]: !prevLikes[id] 
+        }));
+    };
+    
+
+    // naviagte to profile
+    const handleProfileClick = (img) => {
+        navigate(`/profile`, { state: { img } });
+        localStorag.setItem('profileImg', img);
+    };
 
   return (
     <div className=' w-[85%] md:w-[43%] xl:w-[39%] h-full flex flex-col  rounded-2xl  gap-y-3 bg-[#f6f6f6]'>
       {userListItems.map((item,index)=><>
       <div key={item.id} className='w-full h-full bg-white rounded-b-2xl '>
-           <div onClick={()=>navigate(`/profile/${encodeURIComponent(item.pic)}`)} className='h-full'>
+           <div onClick={()=>handleProfileClick(item.pic)} className='h-full'>
                 <img loading='lazy' src={item.pic} className='cursor-pointer rounded-t-2xl w-full h-full' alt="" />
            </div>
+
             {/* Like ,Share ,info Icon section */}
            <div className='flex justify-between p-4'>
                 <div >
@@ -39,10 +45,10 @@ function PostsList() {
                     <small className="text-sm font-semibold text-[#9a9a9a]"> 52km from you</small>
                 </div>
                  <div className='flex justify-between items-center gap-x-1 sm:gap-x-3'>
-                    <div onClick={()=>manageLike(index,item.id)}  className='w-10 h-10 sm:h-12 sm:w-12 rounded-full hover:scale-105 flex cursor-pointer justify-center items-center text-[#d91275] bg-[#f5c6dd]'>
-                        {id === item.id && like ? <FavoriteIcon fontSize='medium'/>: <FavoriteBorderIcon fontSize='medium'/>} 
-                         
-                    </div>
+                 <div onClick={() => manageLike(item.id)} className='w-10 h-10 sm:h-12 sm:w-12 rounded-full hover:scale-105 flex cursor-pointer justify-center items-center text-[#d91275] bg-[#f5c6dd]'>
+                     {like[item.id] ? <FavoriteIcon fontSize='medium'/> : <FavoriteBorderIcon fontSize='medium'/>}
+                 </div>
+
                     <div className='w-10 h-10 sm:h-12 sm:w-12  rounded-full flex hover:scale-105 cursor-pointer justify-center items-center  bg-[#ffebe0] text-[#471476]'>
                         < SendIcon fontSize='medium' className='-rotate-[30deg] mb-1 ml-1'/>
                     </div>
@@ -50,17 +56,17 @@ function PostsList() {
                         <InfoOutlinedIcon fontSize='medium'/>
                     </div>
                 </div>
-           </div>
+            </div>
 
                    {/*Intersted items listed Component */}
                     <UserInterests/>
        </div>
-      </>) }
+                    </>) }
             <div className='flex sm:hidden'>
                 <Footer/>
                 <DownloadApp/>
             </div>
-    </div>
+    </div> 
   )
 }
 

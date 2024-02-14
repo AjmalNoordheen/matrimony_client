@@ -17,11 +17,11 @@ function BottomContetnt() {
             <h1 className="text-xl font-bold text-[#9a9a9a]">Basic Information</h1>
             <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
                 {basicInfor.map((item,index)=>
-                <>
+                <React.Fragment key={index+item}>
                 {index%2===0?
-                <p className="col-span-1 text-lg font-bold">{item} </p>:
-                <p className="col-span-1 font-medium">{item}</p>}
-                </>)}
+                <p  className="col-span-1 text-lg font-bold">{item} </p>:
+                <p  className="col-span-1 font-medium">{item}</p>}
+                </React.Fragment>)}
             </div>
           </div>
 
@@ -29,11 +29,11 @@ function BottomContetnt() {
             <h1 className="text-xl text-[#9a9a9a] font-bold">Religious Information</h1>
             <div className="lg:w-2/3  grid grid-cols-2 sm:text-lg">
                 {Religious.map((item,index)=>
-                <>
+                <React.Fragment>
                 {index%2===0?
-                <p className="col-span-1 text-lg font-bold">{item} </p>:
-                <p className="col-span-1 font-medium">{item}</p>}
-                </>)}
+                <p key={index+item} className="col-span-1 text-lg font-bold">{item} </p>:
+                <p key={index+item}  className="col-span-1 font-medium">{item}</p>}
+                </React.Fragment>)}
             </div>
           </div>
           
